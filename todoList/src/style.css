@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+}
+.card{
+    width:300px;
+    margin:0 auto;
+    border:1px solid #ccc;
+}
+.card-header{
+    padding:5px 3px;
+    background-color: blue;
+    color: #fff;
+}
+.card-body{
+}
+.item{
+    padding:8px 5px;
+    border-bottom:1px solid #ccc;
+}

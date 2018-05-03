@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font:14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@font-face {
+    font-family: 'Glyphicons Halflings';
+
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.header{
+    width: 100%;
+    background-color: #070dbb;
+    color: #fff;
+    text-align: center;
+    padding:15px 5px;
+    position: fixed;
+    top:0;
+    box-shadow: 0px 8px 15px #ccc;
+}
+
+.header h2{
+    color: #fff;
+}
+
+.container{
+    width:300px;
+    margin:160px auto;
+    border:1px solid blue;
+    position: relative;
+}
+.todo-input{
+    width:100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+input{
+    width:90%;
+    height:30px;
+    padding-left: 8px;
+    font-size: 20px;
+    margin-left: 3%;
+    border:0;
+    outline: none;
+}
+.border{
+    width:0%;
+    height:1px;
+    border-bottom:3px solid #070dbb;
+    position: absolute;
+    top:46px;
+    left:50%;
+    transform:translateX(-50%);
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -ms-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .5s ease-out;
+}
+.focus{
+    width:100%;
+}
+.todo-item{
+    padding:16px 8px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.radio{
+    width: 20px;
+    height:20px;
+    border:1px solid #ccc;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.todo-item p{
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.del{
+   position: absolute;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition:  .3s;
+    display: none;
+}
+.todo-item:hover .del{
+    display: block;
+    cursor: pointer;
+}
+.glyphicon {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    left:1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon:before{
+    content: "\e013";
+}
+
+
+.todo-footer{
+    padding:10px 8px;
+    overflow: auto;
+}
+.todo-footer span{
+    display: inline-block;
+    font-size: 14px;
+    padding:5px 4px;
+    float: left;
+
+}
+
+.btn{
+    border:1px solid #ccc;
+    border-radius: 3px;
+    background-color: #070dbb;
+    color: #ccc;
+    margin-left:8px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn-inverse{
+    background-color: #ccc;
+    color: #070dbb;
+}
+.footer{
+    width: 100%;
+    background-color: #070dbb;
+    color: #fff;
+    text-align: center;
+    padding:10px 5px;
+    position: fixed;
+    bottom:0;
+}
+.footer p{
+    font-size:12px;
+}
